@@ -21,6 +21,8 @@ router.get('/school_by_id/:id',SchoolController.getSchoolById);
 //Update school
 router.patch('/school_update/:id',SchoolController.updateSchool);
 
+router.get('/schools/:id', SchoolController.findById);
+
 
 //Export User Route
 module.exports = router

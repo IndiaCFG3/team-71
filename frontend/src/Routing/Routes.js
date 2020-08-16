@@ -34,7 +34,7 @@ const Routes = ({auth,isAuthenticated}) => {
         <PrivateRoute exact path="/our-associates" component={OurAssociates} />
         <PrivateRoute exact path="/our-schools" component={OurSchools} />
         <PrivateRoute exact path="/my-school" component={AssociatedSchool} />
-        <PrivateRoute exact path="/teacher" component={Teacher} />
+        <PrivateRoute exact path="/teachers" component={Teacher} />
         <PrivateRoute exact path="/register-team" component={RegisterTeam} />
         <PrivateRoute exact path="/register-school" component={RegisterSchool} />
         <PrivateRoute exact path="/register-teacher" component={RegisterTeacher} />

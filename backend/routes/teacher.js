@@ -12,7 +12,7 @@ require("./../middlewares/passport")(passport);
 //Create Student route
 router.post('/teacher', TeacherController.createStudent);
 
-//Get all schools in database
+//Get all teachers in database
 router.get('/teachers', TeacherController.getAll);
 
 //Update
