@@ -7,8 +7,8 @@ exports.createTeacher = async function(newTeacher) {
         const teacher = Teacher.create({
 
             name: newTeacher.name,
-            school: new.school,
-            email: new.email,
+            school: newTeacher.school,
+            email: newTeacher.email,
             students : newTeacher.students,
             password: newTeacher.password
             
@@ -33,11 +33,11 @@ exports.getAll = async function() {
     }
 
 }
-exports.updateTeacher = async function(updateTeacher) {
+exports.updateTeacher = async function(id, updateTeacher) {
 
     try{
         const teacher = Teacher.findOneAndUpdate(
-            {_id:updateTeacher.id},
+            {_id:id},
             updateTeacher,
             {new:true,omitUndefined:true})
         return teacher;

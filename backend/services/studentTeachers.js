@@ -35,11 +35,11 @@ exports.getAll = async function() {
 
 }
 
-exports.updateStudentTeacher = async function(updateStudentTeacher) {
+exports.updateStudentTeacher = async function(id, updateStudentTeacher) {
 
     try{
         const studentTeacher = StudentTeacher.findOneAndUpdate(
-            {_id:updateStudentTeacher.id},
+            {_id:id},
             updateStudentTeacher,
             {new:true,omitUndefined:true})
         return studentTeacher;

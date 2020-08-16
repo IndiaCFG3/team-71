@@ -37,7 +37,20 @@ exports.getAll = async function(req,res,next) {
 
 exports.updateTeacher = async function(req,res,next) {
     try{
-        const teachers = await TeacherService.updateTeacher();
+        const newTeacher = {
+            
+            name: req.body.name,
+            school: req.body.school,
+            email: req.body.email,
+            students : req.body.students,
+            password: req.body.password
+            
+        }
+
+        const id =req.params.id;
+               
+
+        const teachers = await TeacherService.updateTeacher(id, newTeacher);
 
         return res.status(200).json(teachers)
     }catch(e){

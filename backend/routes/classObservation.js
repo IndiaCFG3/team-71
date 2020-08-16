@@ -12,9 +12,9 @@ require("./../middlewares/passport")(passport);
 //Create school Route
 router.post('/classObservation', ClassObservationController.create);
 
-router.patch('/classObservation/student', ClassObservationController.updateCOS);
+router.patch('/classObservations/:id', ClassObservationController.updateCOS);
 
-router.patch('/classObservation/studentTeacher', ClassObservationController.updateCOST);
+router.patch('/classObservations/studentTeacher', ClassObservationController.updateCOST);
 
 //Export User Route
 module.exports = router

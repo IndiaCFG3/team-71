@@ -11,7 +11,7 @@ const teamRoutes = require('./team')
 // const classObservationRoutes = require('./classObservation')
 // const unitEvalutationRoutes = require('./unitEvalutation')
 // const teacherRoutes = require('./teacher')
-const studentTeacher = require('./studentTeacher')
+// const studentTeacher = require('./studentTeacher')
 
 //Combine routes
 routes.use(userRoutes)
@@ -23,7 +23,7 @@ routes.use(teamRoutes)
 // routes.use(classObservationRoutes)
 // routes.use(unitEvalutationRoutes)
 // routes.use(teacherRoutes)
-routes.use(studentTeacher)
+// routes.use(studentTeacher)
 
 
 

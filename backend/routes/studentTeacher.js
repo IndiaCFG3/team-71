@@ -16,7 +16,7 @@ router.post('/studentTeacher', StudentTeacherController.createStudentTeacher);
 router.get('/studentTeachers', StudentTeacherController.getAll);
 
 //Update
-router.get('/updateStudentTeacher', StudentTeacherController.updateStudentTeacher);
+router.patch('/updateStudentTeacher/:id', StudentTeacherController.updateStudentTeacher);
 
 
 module.exports = router
