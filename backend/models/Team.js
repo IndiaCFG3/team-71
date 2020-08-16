@@ -11,6 +11,10 @@ const TeamSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref:'students',
   }],
+  teacher:{
+    type: Schema.Types.ObjectId,
+    ref:'teachers',
+  },
   unitEvaluation: [{
       type: Schema.Types.ObjectId,
       ref:'unitEvaluationForm'
