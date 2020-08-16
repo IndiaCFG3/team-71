@@ -23,3 +23,14 @@ exports.createSchool =async function(req,res,next){
         return res.status(400).json(e);
     }
 }
+
+exports.getAll = async function(req,res,next) {
+    try{
+        const schools = await SchoolService.getAll();
+
+        return res.status(200).json(schools)
+    }catch(e){
+        console.log(e)
+        return res.status(400).json(e);
+    }
+}
