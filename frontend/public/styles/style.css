@@ -12,3 +12,8 @@
 .page-title-large a{background-image:url(../images/avatars/5s.png);}
 .page-title-small a{background-image:url(../images/avatars/5s.png);}
 .menu-header a{background-image:url(../images/avatars/5s.png);}
+
+input.transparent-input{
+   background-color:transparent !important;
+   border:none !important;
+}
