@@ -10,6 +10,17 @@ import DefaultLayoutRoute from './DefaultLayout';
 import DashBoard from '../Components/DashBoard';
 import NotFound from '../Components/NotFound';
 
+import OurAssociates from '../Components/OurAssociates';
+import OurSchools from '../Components/OurSchools';
+// import AssociatedSchool from '../Components/AssociatedSchool';
+import AssociatedSchool from '../Components/AssociatedSchool'
+import Teacher from '../Components/Teacher';
+import RegisterTeacher from '../Components/RegisterTeacher';
+import RegisterStudent from '../Components/RegisterStudent';
+import RegisterTeam from '../Components/RegisterTeam';
+import RegisterSchool from '../Components/RegisterSchool';
+import RegisterAssociate from '../Components/RegisterAssociate';
+
 
 const Routes = ({auth,isAuthenticated}) => {
   return (
@@ -18,6 +29,24 @@ const Routes = ({auth,isAuthenticated}) => {
         <DefaultLayoutRoute exact path="/register" component={Register} />
         <DefaultLayoutRoute exact path="/login" component={Login} />
         <PrivateRoute exact path="/dashboard" component={DashBoard} />
+
+
+        <PrivateRoute exact path="/our-associates" component={OurAssociates} />
+        <PrivateRoute exact path="/our-schools" component={OurSchools} />
+        <PrivateRoute exact path="/my-school" component={AssociatedSchool} />
+        <PrivateRoute exact path="/teachers" component={Teacher} />
+        <PrivateRoute exact path="/register-team" component={RegisterTeam} />
+        <PrivateRoute exact path="/register-school" component={RegisterSchool} />
+        <PrivateRoute exact path="/register-teacher" component={RegisterTeacher} />
+        <PrivateRoute exact path="/register-student" component={RegisterStudent} />
+        <PrivateRoute exact path="/register-associates" component={RegisterAssociate} />
+{/*
+        <PrivateRoute exact path="/dashboard" component={DashBoard} />
+        <PrivateRoute exact path="/dashboard" component={DashBoard} /> */}
+
+
+
+
         {/* <PrivateRoute exact path="/myProfile" component={DashBoard} /> */}
 
         {

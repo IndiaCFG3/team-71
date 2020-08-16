@@ -20,7 +20,7 @@ const PrivateLayout = (props) => {
                 <div id="page-wrapper">
                   <div className="row">
                     {/* <SideBar /> */}
-                    <div className="col-lg-12 col-md-12 col-sm-12 pb-10"  style={{margin:'40px'}}>
+                    <div className="col-lg-12 col-md-12 col-sm-12 pb-10">
                       <Alert />
                       {props.children}
                     </div>
