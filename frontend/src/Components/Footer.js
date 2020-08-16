@@ -36,26 +36,26 @@ const Footer = () => {
     </div>
 
     <div id="footer-menu" class="footer-menu-5-icons footer-menu-style-1">
-        <a href="trending.html">
+        <Link to="our-schools">
             <i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i>
             <span>Schools</span>
-        </a>
-        <a href="recipe.html">
+        </Link>
+        <Link to="our-associates">
             <i data-feather="globe" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i>
             <span>Other Associates</span>
-        </a>
-        <a href="dashboard.html" class="active-nav4">
+        </Link>
+        <Link to='/' class="active-nav4">
             <i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue2-dark" data-feather-bg="blue2-fade-dark"></i>
             <span>Home</span>
-        </a>
-        <a href="news.html">
+        </Link>
+        <Link to="/class-observation-form">
             <i data-feather="file" data-feather-line="1" data-feather-size="21" data-feather-color="brown1-dark" data-feather-bg="brown1-fade-light"></i>
-            <span>About Us</span>
-        </a>
-        <a href="settings.html">
+            <span>Class Observation</span>
+        </Link>
+        <Link to="/unit-evaluation-form">
             <i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i>
-            <span>Settings</span>
-        </a>
+            <span>Unit Evaluation</span>
+        </Link>
         <div class="clear"></div>
     </div>
       </div>
