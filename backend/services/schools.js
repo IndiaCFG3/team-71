@@ -17,7 +17,6 @@ exports.createSchool = async function(newSchool) {
         console.log(e)
         return e;
     }
-
 }
 
 exports.getAll = async function() {

@@ -10,7 +10,7 @@ exports.createStudent =async function(req,res,next){
             rollno: req.body.rollno,
             team: req.body.team,
             teacher : req.body.teacher,
-            classObservation: req.body.classObservation
+            classObservation: req.body.classObservation,
             
         }
 
