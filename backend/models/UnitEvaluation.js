@@ -7,6 +7,10 @@ const UnitEvaulationFormSchema = new Schema({
         type:Schema.Types.ObjectId,
         ref:'team'
     },
+    imageURL: {
+        type: String,
+        required: false,
+      },
     ideas: {
       attempted : {
         type: Number,
