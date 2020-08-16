@@ -13,84 +13,84 @@
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
-<body class="theme-light"  data-highlight="blue2">
+<body className="theme-light"  data-highlight="blue2">
 
-<div id="page" class="News">
+<div id="page" className="News">
 
     <div id="page-preloader">
-        <div class="loader-main"><div class="preload-spinner border-highlight"></div></div>
+        <div className="loader-main"><div className="preload-spinner border-highlight"></div></div>
     </div>
 
-	<div class="header header-fixed header-logo-app header-auto-show">
-        <a href="dashboard.html" class="header-subtitle">Back</a>
-		<a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
-		<a href="#" data-toggle-theme class="header-icon header-icon-2"><i class="fas fa-lightbulb"></i></a>
-		<a href="settings.html" class="header-icon header-icon-3"><i class="fas fa-cog"></i></a>
+	<div className="header header-fixed header-logo-app header-auto-show">
+        <a href="dashboard.html" className="header-subtitle">Back</a>
+		<a href="#" data-back-button className="header-icon header-icon-1"><i className="fas fa-arrow-left"></i></a>
+		<a href="#" data-toggle-theme className="header-icon header-icon-2"><i className="fas fa-lightbulb"></i></a>
+		<a href="settings.html" className="header-icon header-icon-3"><i className="fas fa-cog"></i></a>
 	</div>
 
-    <div class="page-content">
+    <div className="page-content">
 
-        <div data-height="150" class="page-title-bg bg-20"><!-- image --></div>
-        <div data-height="150" class="page-title-bg dark-mode-tint"><!-- contrast for dark mode --></div>
-        <div data-height="150" class="page-title-bg opacity-90 bg-highlight"><!-- background color --></div>
+        <div data-height="150" className="page-title-bg bg-20"><!-- image --></div>
+        <div data-height="150" className="page-title-bg dark-mode-tint"><!-- contrast for dark mode --></div>
+        <div data-height="150" className="page-title-bg opacity-90 bg-highlight"><!-- background color --></div>
 
-        <div class="page-title-small color-white bottom-30">
-            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>Teacher Registration Form</h1>
-            <a href="#" data-menu="menu-main" class="shadow-huge scale-box bg-fade-gray2-dark" id="UserProfileImage"></a>
+        <div className="page-title-small color-white bottom-30">
+            <h1 onclick="window.location='dashboard.html'"><i className="fa fa-arrow-left back-button"></i>Teacher Registration Form</h1>
+            <a href="#" data-menu="menu-main" className="shadow-huge scale-box bg-fade-gray2-dark" id="UserProfileImage"></a>
         </div>
 
         <div id="newsPinboard">
 
         </div>
 
-        <div class="content-boxed bg-theme shadow-large bottom-30">
-            
+        <div className="content-boxed bg-theme shadow-large bottom-30">
+
             <form action="functionality/prescription_act.php" method="POST">
                                       <b>Teacher Name</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field">
+                                      <div className="table-responsive">
+                                        <table className="table " id="dynamic_field">
                                           <tr>
-                                            <td><input type="text" name="teachername" placeholder="Enter Teacher Name" class="form-control name_list" /></td>
+                                            <td><input type="text" name="teachername" placeholder="Enter Teacher Name" className="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
 																			<b>Address</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field2">
+                                      <div className="table-responsive">
+                                        <table className="table " id="dynamic_field2">
                                           <tr>
-                                            <td><input type="text" name="address" placeholder="Enter Address" class="form-control name_list" /></td>
+                                            <td><input type="text" name="address" placeholder="Enter Address" className="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
 																			<b>Email</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field4">
+                                      <div className="table-responsive">
+                                        <table className="table " id="dynamic_field4">
                                           <tr>
-                                            <td><input type="email" name="mail" placeholder="Enter Email" class="form-control name_list" /></td>
+                                            <td><input type="email" name="mail" placeholder="Enter Email" className="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
 																			<b>Phone Number</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field3">
+                                      <div className="table-responsive">
+                                        <table className="table " id="dynamic_field3">
                                           <tr>
-                                            <td><input type="text" name="phonenumber" placeholder="Enter Phone Number" class="form-control name_list" /></td>
+                                            <td><input type="text" name="phonenumber" placeholder="Enter Phone Number" className="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
-                                      <div class="position-relative form-group"><label for="password" class="password"><b>Password</b></label><input name="password" id="password" placeholder="Password" type="text" class="form-control"></div>
-                                      <div class="position-relative form-group"><label for="description" class=""><b>Enter Description</b></label><input name="description" id="special" placeholder="Description" type="text" class="form-control"></div>
-                                      <button class="mb-2 mr-2 btn btn-success btn-lg btn-block" name="submit">Submit</button>
+                                      <div className="position-relative form-group"><label for="password" className="password"><b>Password</b></label><input name="password" id="password" placeholder="Password" type="text" className="form-control"></div>
+                                      <div className="position-relative form-group"><label for="description" className=""><b>Enter Description</b></label><input name="description" id="special" placeholder="Description" type="text" className="form-control"></div>
+                                      <button className="mb-2 mr-2 btn btn-success btn-lg btn-block" name="submit">Submit</button>
                                   </form>
-            <p class="center-text under-heading opacity-70 font-12 bottom-0"><span class="color-highlight">Connect With Your Community</span></p>
+            <p className="center-text under-heading opacity-70 font-12 bottom-0"><span className="color-highlight">Connect With Your Community</span></p>
 
-            <p class="footer-copyright bottom-20">Copyright © Patiala.City <span id="copyright-year">2020</span>. All Rights Reserved.</p>
+            <p className="footer-copyright bottom-20">Copyright © Patiala.City <span id="copyright-year">2020</span>. All Rights Reserved.</p>
         </div>
-       
+
     </div>
 
     <!-- Footer Menu-->
-    <div id="footer-menu" class="footer-menu-5-icons footer-menu-style-1">
+    <div id="footer-menu" className="footer-menu-5-icons footer-menu-style-1">
         <a href="trending.html">
             <i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i>
             <span>Schools</span>
@@ -99,7 +99,7 @@
             <i data-feather="globe" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i>
             <span>Other Associates</span>
         </a>
-        <a href="dashboard.html" class="active-nav4">
+        <a href="dashboard.html" className="active-nav4">
             <i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue2-dark" data-feather-bg="blue2-fade-dark"></i>
             <span>Home</span>
         </a>
@@ -111,31 +111,32 @@
             <i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i>
             <span>Settings</span>
         </a>
-        <div class="clear"></div>
+        <div className="clear"></div>
     </div>
+
 
     <!-- Main Sidebar Menu-->
     <div id="menu-main"
-         class="menu menu-box-right menu-box-detached round-medium"
+         className="menu menu-box-right menu-box-detached round-medium"
          data-menu-active="nav-features"
          data-menu-width="260" data-menu-effect="menu-over" data-menu-load="menu-main.html">
     </div>
 
     <!-- Share Menu-->
     <div id="menu-share"
-         class="menu menu-box-bottom menu-box-detached round-medium"
+         className="menu menu-box-bottom menu-box-detached round-medium"
          data-menu-height="400" data-menu-effect="menu-over" data-menu-load="menu-share.html">
     </div>
 
     <!-- Color Highlights Menu-->
     <div id="menu-highlights"
-         class="menu menu-box-bottom menu-box-detached round-medium"
+         className="menu menu-box-bottom menu-box-detached round-medium"
          data-menu-height="480" data-menu-effect="menu-over" data-menu-load="menu-colors.html">
     </div>
 
 
 
-    <div class="menu-hider"></div>
+    <div className="menu-hider"></div>
 </div>
 
 
