@@ -31,3 +31,24 @@ router.delete('/user',passport.authenticate("jwt",{session:false}), UserControll
 
 //Export User Route
 module.exports = router
+
+
+/*
+schools- create,getAll, get school by id,update school                ---Anuj
+
+students- create, getAllStudents,           ----Rohit
+
+
+teams- create team(sending student ids),update team,getTeam,getTeam  ----------Rohan
+
+inquilab-create,update(by id),read                                      ---------Anuj
+
+ClassObservation- Create,edit(2types- student, student-teacher)         -----Rohan
+UnitEvaluation- Create,edit                                  -----------Anuj
+
+student-teacher- create,read, update               ----Rohit
+
+teacher- create,read,update                    ---Rohit
+
+
+*/
