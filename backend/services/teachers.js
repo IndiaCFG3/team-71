@@ -33,11 +33,11 @@ exports.getAll = async function() {
     }
 
 }
-exports.updateTeacher = async function(updateTeacher) {
+exports.updateTeacher = async function(id, updateTeacher) {
 
     try{
         const teacher = Teacher.findOneAndUpdate(
-            {_id:updateTeacher.id},
+            {_id:id},
             updateTeacher,
             {new:true,omitUndefined:true})
         return teacher;
