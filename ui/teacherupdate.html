@@ -4,13 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Patiala.City | News</title>
+<title>Patiala.City | Schools</title>
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
-<link rel="stylesheet" type="text/css" href="styles/main.css">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 </head>
 
 <body class="theme-light"  data-highlight="blue2">
@@ -35,77 +38,65 @@
         <div data-height="150" class="page-title-bg opacity-90 bg-highlight"><!-- background color --></div>
 
         <div class="page-title-small color-white bottom-30">
-            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>Teacher Registration Form</h1>
+            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>TeachersInfo</h1>
             <a href="#" data-menu="menu-main" class="shadow-huge scale-box bg-fade-gray2-dark" id="UserProfileImage"></a>
         </div>
 
-        <div id="newsPinboard">
+        <div id="recipesPinboard">
 
         </div>
+        <!--div class="content right-20 left-20">
+          <a class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40" onclick="fetchNews()">
+            More..
+          </a>
+        </div-->
 
-        <div class="content-boxed bg-theme shadow-large bottom-30">
-            
-            <form action="functionality/prescription_act.php" method="POST">
-                                      <b>Teacher Name</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field">
-                                          <tr>
-                                            <td><input type="text" name="teachername" placeholder="Enter Teacher Name" class="form-control name_list" /></td>
-                                          </tr>
-                                        </table>
-                                      </div>
-																			<b>Address</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field2">
-                                          <tr>
-                                            <td><input type="text" name="address" placeholder="Enter Address" class="form-control name_list" /></td>
-                                          </tr>
-                                        </table>
-                                      </div>
-																			<b>Email</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field4">
-                                          <tr>
-                                            <td><input type="email" name="mail" placeholder="Enter Email" class="form-control name_list" /></td>
-                                          </tr>
-                                        </table>
-                                      </div>
-																			<b>Phone Number</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field3">
-                                          <tr>
-                                            <td><input type="text" name="phonenumber" placeholder="Enter Phone Number" class="form-control name_list" /></td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                      <div class="position-relative form-group"><label for="password" class="password"><b>Password</b></label><input name="password" id="password" placeholder="Password" type="text" class="form-control"></div>
-                                      <div class="position-relative form-group"><label for="description" class=""><b>Enter Description</b></label><input name="description" id="special" placeholder="Description" type="text" class="form-control"></div>
-                                      <button class="mb-2 mr-2 btn btn-success btn-lg btn-block" name="submit">Submit</button>
-                                  </form>
-            <p class="center-text under-heading opacity-70 font-12 bottom-0"><span class="color-highlight">Connect With Your Community</span></p>
-
-            <p class="footer-copyright bottom-20">Copyright © Patiala.City <span id="copyright-year">2020</span>. All Rights Reserved.</p>
-        </div>
-       
+        
     </div>
+    <div class="content-boxed bg-theme shadow-large bottom-30">
+        <img src="./images/schools/banner9.jpg" class="card-img-top" alt="...">
+        <h2 class="center-text font-800 font-30 uppercase">SchoolName</h2>
+      
+        <p class="center-text under-heading opacity-70  bottom-0"><span class="color-highlight">Description of School</span></p>
+       
+       </div>
+     <!--Body-->
+     <div class="content-boxed bg-theme shadow-large bottom-30">
+        <img src="./images/schools/banner9.jpg" class="card-img-top" alt="...">
+        <h2 class="center-text font-800 font-30 uppercase">teacher-1</h2>
+      
+        <p class="center-text under-heading opacity-70  bottom-0"><span class="color-highlight">Description of teacher-1 </span></p>
+       
+       
+        <div class="content right-20 left-20">
+            <a class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">
+              Update Details
+            </a>
+          </div>
+       </div>
+   
+  
 
+   
+  
+     <!--Body-->
     <!-- Footer Menu-->
     <div id="footer-menu" class="footer-menu-5-icons footer-menu-style-1">
         <a href="trending.html">
             <i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i>
-            <span>Schools</span>
+            <span>Trending</span>
         </a>
-        <a href="recipe.html">
+        <a href="recipe.html" class="active-nav4">
             <i data-feather="globe" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i>
-            <span>Other Associates</span>
+            <span>Recipes</span>
         </a>
-        <a href="dashboard.html" class="active-nav4">
+        <a href="dashboard.html">
             <i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue2-dark" data-feather-bg="blue2-fade-dark"></i>
             <span>Home</span>
         </a>
         <a href="news.html">
             <i data-feather="file" data-feather-line="1" data-feather-size="21" data-feather-color="brown1-dark" data-feather-bg="brown1-fade-light"></i>
-            <span>About Us</span>
+            <span>News</span>
         </a>
         <a href="settings.html">
             <i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i>
@@ -142,6 +133,11 @@
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript">
+//getData_Blog_Pinboard(0);
+getData_Blog_By_CID(1);
+</script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script src="scripts/owl.carousel.min.js"></script>
 </body>
 </html>
