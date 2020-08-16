@@ -10,6 +10,11 @@ import DefaultLayoutRoute from './DefaultLayout';
 import DashBoard from '../Components/DashBoard';
 import NotFound from '../Components/NotFound';
 
+import OurAssociates from '../Components/OurAssociates';
+import OurSchools from '../Components/OurSchools';
+// import AssociatedSchool from '../Components/AssociatedSchool';
+import AssociatedSchool from '../Components/AssociatedSchool'
+import Teacher from '../Components/Teacher';
 
 const Routes = ({auth,isAuthenticated}) => {
   return (
@@ -18,6 +23,19 @@ const Routes = ({auth,isAuthenticated}) => {
         <DefaultLayoutRoute exact path="/register" component={Register} />
         <DefaultLayoutRoute exact path="/login" component={Login} />
         <PrivateRoute exact path="/dashboard" component={DashBoard} />
+
+
+        <PrivateRoute exact path="/our-associates" component={OurAssociates} />
+        <PrivateRoute exact path="/our-schools" component={OurSchools} />
+        <PrivateRoute exact path="/my-school" component={AssociatedSchool} />
+        <PrivateRoute exact path="/teacher" component={Teacher} />
+{/* 
+        <PrivateRoute exact path="/dashboard" component={DashBoard} />
+        <PrivateRoute exact path="/dashboard" component={DashBoard} /> */}
+
+
+
+
         {/* <PrivateRoute exact path="/myProfile" component={DashBoard} /> */}
 
         {
