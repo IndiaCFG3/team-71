@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
@@ -34,39 +35,133 @@
         <div data-height="150" class="page-title-bg opacity-90 bg-highlight"><!-- background color --></div>
 
         <div class="page-title-small color-white bottom-30">
-            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>News</h1>
+            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>Unit Evauation Form</h1>
             <a href="#" data-menu="menu-main" class="shadow-huge scale-box bg-fade-gray2-dark" id="UserProfileImage"></a>
         </div>
 
         <div id="newsPinboard">
 
         </div>
+
+        <div class="content-boxed bg-theme shadow-large bottom-30">
+            <h5 class="center-text font-800 font-30 uppercase">Team Name</h5>
+            <form class="" action="index.html" method="post">
+                                    <b></b>
+                                    <b>Ideas</b>
+                                    <div class="table-responsive">
+                                      <table class="table " id="dynamic_field2">
+                                        <tr>
+                                          <td>
+                                					<label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="5"><img src="images/sm/A.png" style="max-width:100%; max-height:50px;"></label></div>
+                                					<label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="4"><img src="images/sm/B.png" style="max-width:100%; max-height:50px;"></label></div>
+                                					<label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="1"><img src="images/sm/E.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="3"><img src="images/sm/C.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="2"><img src="images/sm/D.png" style="max-width:100%; max-height:50px;"></label></div>
+                                        </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <b>Plan</b>
+                                    <div class="table-responsive">
+                                      <table class="table " id="dynamic_field4">
+                                        <tr>
+                                          <td>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="5"><img src="images/sm/A.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="" value="4"><img src="images/sm/B.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="" value="1"><img src="images/sm/E.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="" value="3"><img src="images/sm/C.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="2"><img src="images/sm/D.png" style="max-width:100%; max-height:50px;"></label></div>
+                                        </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <b>Make Test</b>
+                                    <div class="table-responsive">
+                                      <table class="table " id="dynamic_field3">
+                                        <tr>
+                                          <td>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="5"><img src="images/sm/A.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="4"><img src="images/sm/B.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="1"><img src="images/sm/E.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="3"><img src="images/sm/C.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="2"><img src="images/sm/D.png" style="max-width:100%; max-height:50px;"></label></div>
+                                        </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <b>Presentation</b>
+                                    <div class="table-responsive">
+                                      <table class="table " id="dynamic_field5">
+                                        <tr>
+                                          <td>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="5"><img src="images/sm/A.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="4"><img src="images/sm/B.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="1"><img src="images/sm/E.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="3"><img src="images/sm/C.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="2"><img src="images/sm/D.png" style="max-width:100%; max-height:50px;"></label></div>
+                                        </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <b>Risk Taking</b>
+                                    <div class="table-responsive">
+                                      <table class="table " id="dynamic_field3">
+                                        <tr>
+                                          <td>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="5"><img src="images/sm/A.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="4"><img src="images/sm/B.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="1"><img src="images/sm/E.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="3"><img src="images/sm/C.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="2"><img src="images/sm/D.png" style="max-width:100%; max-height:50px;"></label></div>
+                                        </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <b>Team Work</b>
+                                    <div class="table-responsive">
+                                      <table class="table " id="dynamic_field3">
+                                        <tr>
+                                          <td>
+                                					<label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="5"><img src="images/sm/A.png" style="max-width:100%; max-height:50px;"></label></div>
+                                					<label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="4"><img src="images/sm/B.png" style="max-width:100%; max-height:50px;"></label></div>
+                                					<label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="1"><img src="images/sm/E.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="3"><img src="images/sm/C.png" style="max-width:100%; max-height:50px;"></label></div>
+                                          <label><input type="radio" class="form-control" name="<?php echo $questions[$j]; ?>" value="2"><img src="images/sm/D.png" style="max-width:100%; max-height:50px;"></label></div>
+                                        </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+
+            </form>
+            <p class="center-text under-heading opacity-70 font-12 bottom-0"><span class="color-highlight">Connect With Your Community</span></p>
+
+            <p class="footer-copyright bottom-20">Copyright © Patiala.City <span id="copyright-year">2020</span>. All Rights Reserved.</p>
+        </div>
         <div class="content right-20 left-20">
-          <a class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40" onclick="fetchNews()">
-            More..
+          <a class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">
+            Submit
           </a>
         </div>
-
-        <div class="footer" data-footer-load="menu-footer.html"></div>
+  <button class="mb-2 mr-2 btn btn-success btn-lg btn-block" name="submit">Submit</button>
     </div>
 
     <!-- Footer Menu-->
     <div id="footer-menu" class="footer-menu-5-icons footer-menu-style-1">
         <a href="trending.html">
             <i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i>
-            <span>Trending</span>
+            <span>Schools</span>
         </a>
         <a href="recipe.html">
             <i data-feather="globe" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i>
-            <span>Recipes</span>
+            <span>Other Associates</span>
         </a>
-        <a href="dashboard.html">
+        <a href="dashboard.html" class="active-nav4">
             <i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue2-dark" data-feather-bg="blue2-fade-dark"></i>
             <span>Home</span>
         </a>
-        <a href="news.html" class="active-nav4">
+        <a href="news.html">
             <i data-feather="file" data-feather-line="1" data-feather-size="21" data-feather-color="brown1-dark" data-feather-bg="brown1-fade-light"></i>
-            <span>News</span>
+            <span>About Us</span>
         </a>
         <a href="settings.html">
             <i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i>
@@ -103,21 +198,5 @@
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
-<script type="text/javascript">
-//getData_Blog_Pinboard(0);
-var off=0;
-if (window.location.href.split('#CID/').length==2) {
-  var id = window.location.href.split('#CID/');
-  id = id[1];
-  getNewsbyCategory(id);
-}else {
-  getData_News_Pinbord(off);
-  off++;
-  function fetchNews() {
-    getData_News_Pinbord(off);
-    off++;
-  }
-}
-</script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 </body>

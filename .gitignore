@@ -4,3 +4,7 @@ Team*.zip
 *.crt
 *.key
 *.ovpn
+/frontend/node_modules/
+/backend/node_modules/
+/backend/config.js
+

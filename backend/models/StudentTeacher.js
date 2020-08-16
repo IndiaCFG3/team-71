@@ -26,20 +26,25 @@ const StudentTeacherSchema = new Schema({
   */
   Description: {
     type: String,
+    required: false,
   },
   class: {
     type: String,
     required: true,
   },
-  enabled: {
-      type: Boolean,
-      default:true,
-      required:false,
-  },
   teacher:{
       type: Schema.Types.ObjectId,
-      ref:'schools'
-  }
+      ref:'teachers'
+  },
+  classObservation: [{
+    type:Schema.Types.ObjectId,
+    ref:'classObservationForm'
+  }],
+  enabled: {
+    type: Boolean,
+    default:true,
+    required:false,
+  },
 });
 
 module.exports = StudentTeacher = mongoose.model("StudentTeacher", StudentTeacherSchema);
