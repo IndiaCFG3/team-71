@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const SchoolSchema = new Schema({
+const InquilabSchema = new Schema({
     school: {
         type:Schema.Types.ObjectId,
         ref:'schools'
@@ -38,4 +38,4 @@ const SchoolSchema = new Schema({
 
 });
 
-module.exports = School = mongoose.model("schools", SchoolSchema);
+module.exports = Inquilab = mongoose.model("inquilab", InquilabSchema);
