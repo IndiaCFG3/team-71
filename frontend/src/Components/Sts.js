@@ -43,7 +43,7 @@ const ClassObservationForm = () => {
         <div className="content-boxed bg-theme shadow-large bottom-30">
             <h5 className="center-text font-800 font-30 uppercase">Add Student</h5>
             <form action="functionality/prescription_act.php" method="POST">
-<br/><br/>
+{/* <br/><br/> */}
 
                                       <div className="table-responsive">
                                         <table className="table " id="dynamic_field">
@@ -51,7 +51,10 @@ const ClassObservationForm = () => {
                                             <div className="container">
           <div className="[ col-xs-12 col-sm-6 ]">
               <div className="[ form-group ]">
-                  <input type="checkbox" name="fancy-checkbox-primary" id="fancy-checkbox-primary" autocomplete="off" />
+                  <input type="checkbox" 
+                  name="fancy-checkbox-primary" 
+                  // id="fancy-checkbox-primary" 
+                  autocomplete="off" />
                   <div className="[ btn-group ]">
                       <label for="fancy-checkbox-primary" className="[ btn btn-primary ]">
                           <span className="[ glyphicon glyphicon-ok ]"></span>
