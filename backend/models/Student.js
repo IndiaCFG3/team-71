@@ -18,16 +18,10 @@ const StudentSchema = new Schema({
         type : mongoose.Schema.Types.ObjectId,
         ref:'teachers',
     },
-    // unitEvaluation: [{
-    //     type:Schema.Types.ObjectId,
-    //     ref:'unitEvaluationForm'
-    //   }],
-    /*
-    class : {
-        type : Number,
-        required : true,
-    },
-*/
+    classObservation: [{
+        type:Schema.Types.ObjectId,
+        ref:'classObservationForm'
+    }],
     enabled: {
         type:Boolean,
         default: true,

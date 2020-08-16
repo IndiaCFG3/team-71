@@ -7,6 +7,10 @@ const ClassObservationFormSchema = new Schema({
         type:Schema.Types.ObjectId,
         ref:'studentTeacher'
     },
+    imageURL: {
+      type: String,
+      required: false,
+    },
     leadership: {
       classPresence : {
         type: Number,
