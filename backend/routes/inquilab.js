@@ -3,23 +3,23 @@ const express = require('express')
 const router = express.Router()
 
 //Import controller
-const SchoolController = require('../controllers/schools')
+const InquilabController = require('../controllers/inquilab')
 
 //Import and require Passport
 const passport = require("passport");
 require("./../middlewares/passport")(passport);
 
 //Create school Route
-router.post('/school_create', SchoolController.createSchool);
+router.post('/inquilab_create', InquilabController.createInquilab);
 
 //Get all schools in database
-router.get('/school_getall', SchoolController.getAll);
+router.get('/inquilab_getall', InquilabController.getAll);
 
 //Get school by user ID
-router.get('/school_by_id/:id',SchoolController.getSchoolById);
+//router.get('/inquilab_by_id/:id',SchoolController.getSchoolById);
 
 //Update school
-router.patch('/school_update/:id',SchoolController.updateSchool);
+router.put('/inquilab_update/:id',InquilabController.updateInquilab);
 
 
 //Export User Route

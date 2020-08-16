@@ -31,3 +31,26 @@ exports.getAll = async function() {
     }
 
 }
+
+exports.getSchoolById = async function(id){
+    try{
+        const school = School.findById(id);
+
+        return res.status(200).json(school);
+    }
+    catch(e){
+        console.log(e)
+        return res.status(400).json(e);
+    }
+}
+
+exports.updateSchool = async function (updateSchool) {
+    try{
+        const school = School.findOneAndUpdate({_id:updateSchool.id},updateSchool,{new : true,omitUndefined: true});
+
+        return school
+    }
+    catch(errors){
+        return res.status(400).json(errors)
+    }
+}

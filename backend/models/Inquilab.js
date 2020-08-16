@@ -35,7 +35,6 @@ const InquilabSchema = new Schema({
         default: true,
         required: false
     }
-
 });
 
 module.exports = Inquilab = mongoose.model("inquilab", InquilabSchema);
