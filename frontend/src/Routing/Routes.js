@@ -23,6 +23,7 @@ import RegisterAssociate from '../Components/RegisterAssociate';
 import ClassObservationForm from '../Components/ClassObservationForm';
  import UnitEvaluationForm from '../Components/UnitEvaluationForm';
 import ReactCharts from '../Components/ReactCharts';
+import Sts from '../Components/Sts';
 
 
 const Routes = ({auth,isAuthenticated}) => {
@@ -46,6 +47,7 @@ const Routes = ({auth,isAuthenticated}) => {
         <PrivateRoute exact path="/class-observation-form" component={ClassObservationForm} />
         <PrivateRoute exact path="/unit-evaluation-form" component={UnitEvaluationForm} />
 <PrivateRoute exact path="/dataVisualization" component={ReactCharts} />
+<PrivateRoute exact path="/sts" component={Sts} />
 {/*
         <PrivateRoute exact path="/dashboard" component={DashBoard} />
         <PrivateRoute exact path="/dashboard" component={DashBoard} /> */}
