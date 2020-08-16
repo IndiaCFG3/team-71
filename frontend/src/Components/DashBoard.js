@@ -60,6 +60,9 @@ const DashBoard = ({user,isAuthenticated}) => {
             <Link to="/register-team" class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">My Student Teams</Link>
         </div>
         <div>
+            <Link to="/sts" class="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40">Add Student Teacher</Link>
+        </div>
+        <div>
             {/* <a href="#" data-menu="menu-share" class="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40">Student Teachers</a> */}
         </div>
     </div>
