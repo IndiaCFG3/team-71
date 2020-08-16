@@ -66,3 +66,15 @@ exports.updateSchool = async function (req,res,next) {
         return res.status(400).json(errors)
     }
 }
+
+
+exports.findById = async function(req,res,next) {
+    try{
+        const schools = await SchoolService.getById(req.params.id);
+
+        return res.status(200).json(schools)
+    }catch(e){
+        console.log(e)
+        return res.status(400).json(e);
+    }
+}

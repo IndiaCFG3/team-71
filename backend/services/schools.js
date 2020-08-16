@@ -54,3 +54,23 @@ exports.updateSchool = async function (updateSchool) {
         return res.status(400).json(errors)
     }
 }
+
+
+
+
+
+exports.getById = async function(id) {
+
+    try{
+        const school = await School.findById(id)
+        return school;
+    }
+    catch(e){
+        console.log(e)
+        return e;
+    }
+
+}
+
+
+
