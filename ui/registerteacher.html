@@ -35,7 +35,7 @@
         <div data-height="150" class="page-title-bg opacity-90 bg-highlight"><!-- background color --></div>
 
         <div class="page-title-small color-white bottom-30">
-            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>Unit Evauation Form</h1>
+            <h1 onclick="window.location='dashboard.html'"><i class="fa fa-arrow-left back-button"></i>Teacher Registration Form</h1>
             <a href="#" data-menu="menu-main" class="shadow-huge scale-box bg-fade-gray2-dark" id="UserProfileImage"></a>
         </div>
 
@@ -44,89 +44,49 @@
         </div>
 
         <div class="content-boxed bg-theme shadow-large bottom-30">
-            <h5 class="center-text font-800 font-30 uppercase">Team Name</h5>
+            
             <form action="functionality/prescription_act.php" method="POST">
-                                      <b>Patient Complaints</b>
+                                      <b>Teacher Name</b>
                                       <div class="table-responsive">
                                         <table class="table " id="dynamic_field">
                                           <tr>
-                                            <td><input type="text" name="symptoms[]" placeholder="Enter Patient Complaints" class="form-control name_list" /></td>
-                                            <td><button type="button" name="add" id="add" class="mt-2 btn btn-primary">Add More</button></td>
+                                            <td><input type="text" name="teachername" placeholder="Enter Teacher Name" class="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
-																			<b>Examination Findings</b>
+																			<b>Address</b>
                                       <div class="table-responsive">
                                         <table class="table " id="dynamic_field2">
                                           <tr>
-                                            <td><input type="text" name="findings[]" placeholder="Enter Doctor Findings" class="form-control name_list" /></td>
-                                            <td><button type="button" name="add2" id="add2" class="mt-2 btn btn-primary">Add More</button></td>
+                                            <td><input type="text" name="address" placeholder="Enter Address" class="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
-																			<b>Vitals</b>
+																			<b>Email</b>
                                       <div class="table-responsive">
                                         <table class="table " id="dynamic_field4">
                                           <tr>
-                                            <td><input type="text" name="vitals[]" placeholder="Enter Body Vitals" class="form-control name_list" /></td>
-                                            <td><button type="button" name="add4" id="add4" class="mt-2 btn btn-primary">Add More</button></td>
+                                            <td><input type="email" name="mail" placeholder="Enter Email" class="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
-																			<b>Diagnosis</b>
+																			<b>Phone Number</b>
                                       <div class="table-responsive">
                                         <table class="table " id="dynamic_field3">
                                           <tr>
-                                            <td><input type="text" name="diagnosis[]" placeholder="Enter Diagnosis" class="form-control name_list" /></td>
-                                            <td><button type="button" name="add3" id="add3" class="mt-2 btn btn-primary">Add More</button></td>
+                                            <td><input type="text" name="phonenumber" placeholder="Enter Phone Number" class="form-control name_list" /></td>
                                           </tr>
                                         </table>
                                       </div>
-                                      <div class="position-relative form-group"><label for="exampleAddress" class=""><b>Diet Advice</b></label><input name="diet" id="diet" placeholder="Diet Care" type="text" class="form-control"></div>
-                                      <div class="position-relative form-group"><label for="exampleAddress2" class=""><b>Special Advice</b></label><input name="special" id="special" placeholder="Lab tests, Rest Period, Special Care etc." type="text" class="form-control"></div>
-																			<b>Test Advice</b>
-                                      <div class="table-responsive">
-                                        <table class="table " id="dynamic_field5">
-                                          <tr>
-                                            <td><input type="text" name="labtests[]" placeholder="Suggested Lab Test" class="form-control name_list" /></td>
-                                            <td><button type="button" name="add5" id="add5" class="mt-2 btn btn-primary">Add More</button></td>
-                                          </tr>
-                                        </table>
-                                      </div>
-																			<div class="table-responsive">
-                                        <table class="table " id="dynamic_field1">
-                                          <thead>
-                                            <tr>
-                                              <th>Medicine Name</th>
-                                              <th>Instructions</th>
-                                              <th>Dosage</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td><input type="text" name="med[]" placeholder="Medicine Name" class="form-control name_list" /></td>
-                                              <td><input type="text" name="instruct[]" placeholder="Instructions" class="form-control name_list" /></td>
-                                              <td><input type="number" name="dose[]" placeholder="Dosage" class="form-control name_list" /></td>
-                                              <td><button type="button" name="add1" id="add1" class="mt-2 btn btn-primary">Add More</button></td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                      <input type="hidden" name="hospitalID" value="<?php echo $hospitalID; ?>">
-                                      <input type="hidden" name="doctorID" value="<?php echo $id; ?>">
-                                      <input type="hidden" name="patientID" value="<?php echo $patientID; ?>">
+                                      <div class="position-relative form-group"><label for="password" class="password"><b>Password</b></label><input name="password" id="password" placeholder="Password" type="text" class="form-control"></div>
+                                      <div class="position-relative form-group"><label for="description" class=""><b>Enter Description</b></label><input name="description" id="special" placeholder="Description" type="text" class="form-control"></div>
                                       <button class="mb-2 mr-2 btn btn-success btn-lg btn-block" name="submit">Submit</button>
                                   </form>
             <p class="center-text under-heading opacity-70 font-12 bottom-0"><span class="color-highlight">Connect With Your Community</span></p>
 
             <p class="footer-copyright bottom-20">Copyright © Patiala.City <span id="copyright-year">2020</span>. All Rights Reserved.</p>
         </div>
-        <div class="content right-20 left-20">
-          <a class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">
-            Submit
-          </a>
-        </div>
-  <button class="mb-2 mr-2 btn btn-success btn-lg btn-block" name="submit">Submit</button>
+       
     </div>
 
     <!-- Footer Menu-->
