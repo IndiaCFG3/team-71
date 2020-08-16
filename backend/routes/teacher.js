@@ -10,7 +10,7 @@ const passport = require("passport");
 require("./../middlewares/passport")(passport);
 
 //Create Student route
-router.post('/teacher', TeacherController.createStudent);
+router.post('/teacher', TeacherController.createTeacher);
 
 //Get all schools in database
 router.get('/teachers', TeacherController.getAll);
