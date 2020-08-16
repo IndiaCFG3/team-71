@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 const RegisterSchool = () => {
   return (
+    <>
     <div className="page-content">
 
         <div data-height="150" className="page-title-bg bg-20"></div>
@@ -17,7 +18,7 @@ const RegisterSchool = () => {
         <div className="content-boxed bg-theme shadow-large bottom-30">
             <h5 className="center-text font-800 font-30 uppercase">Student Teacher 1</h5>
             <form className="" action="index.html" method="post">
-                <hr>
+                <hr />
                                     <h2 className="center-text font-800">Leadership</h2>
                                     <b></b>
                                     <b>Class Presence</b>
@@ -26,15 +27,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -47,15 +48,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -68,15 +69,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -88,12 +89,12 @@ const RegisterSchool = () => {
                                       <table className="table " id="dynamic_field5">
                                         <tr>
                                           <td>
-                                          <textarea id="form7" className="md-textarea form-control" rows="3" style="color: black; background-color: transparent;"></textarea>
+                                          <textarea id="form7" className="md-textarea form-control" rows="3" style={{color:'black',backgroundColor:'transparent'}}></textarea>
                                         </td>
                                         </tr>
                                       </table>
                                     </div>
-                                    <hr>
+                                    <hr />
                                                         <h2 className="center-text font-800">Mentorship</h2>
                                                         <b></b>
                                     <b>Preparation</b>
@@ -102,15 +103,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -123,27 +124,35 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
+</div><div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div><div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
 </div>
 
                                         </td>
                                         </tr>
-                                      </div>
+                                      {/* </div> */}
                                       </table>
+                                      </div>
                                     <b>Notes</b>
                                     <div className="table-responsive">
                                       <table className="table " id="dynamic_field5">
                                         <tr>
                                           <td>
-                                          <textarea id="form7" className="md-textarea form-control" rows="3" style="color: black; background-color: transparent;"></textarea>
+                                          <textarea id="form7" className="md-textarea form-control" rows="3" style={{color:'black',backgroundColor:'transparent'}}></textarea>
                                         </td>
                                         </tr>
                                       </table>
@@ -154,7 +163,7 @@ const RegisterSchool = () => {
         <div className="content-boxed bg-theme shadow-large bottom-30">
             <h5 className="center-text font-800 font-30 uppercase">Student Teacher 2</h5>
             <form className="" action="index.html" method="post">
-                <hr>
+                <hr />
                                     <h2 className="center-text font-800">Leadership</h2>
                                     <b></b>
                                     <b>className Presence</b>
@@ -163,15 +172,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -184,15 +193,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -205,15 +214,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -225,12 +234,12 @@ const RegisterSchool = () => {
                                       <table className="table " id="dynamic_field5">
                                         <tr>
                                           <td>
-                                          <textarea id="form7" className="md-textarea form-control" rows="3" style="color: black; background-color: transparent;"></textarea>
+                                          <textarea id="form7" className="md-textarea form-control" rows="3" style={{color:'black',backgroundColor:'transparent'}}></textarea>
                                         </td>
                                         </tr>
                                       </table>
                                     </div>
-                                    <hr>
+                                    <hr />
                                                         <h2 className="center-text font-800">Mentorship</h2>
                                                         <b></b>
                                     <b>Preparation</b>
@@ -239,15 +248,15 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
@@ -260,27 +269,28 @@ const RegisterSchool = () => {
                                         <tr>
                                           <td>
                                             <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
   <label className="form-check-label" for="inlineRadio1">1</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
 </div>
 
                                         </td>
                                         </tr>
-                                      </div>
+                                      
                                       </table>
+                                      </div>
                                     <b>Notes</b>
                                     <div className="table-responsive">
                                       <table className="table " id="dynamic_field5">
                                         <tr>
                                           <td>
-                                          <textarea id="form7" className="md-textarea form-control" rows="3" style="color: black; background-color: transparent;"></textarea>
+                                          <textarea id="form7" className="md-textarea form-control" rows="3" style={{color:'black',backgroundColor:'transparent'}}></textarea>
                                         </td>
                                         </tr>
                                       </table>
@@ -293,9 +303,9 @@ const RegisterSchool = () => {
             Submit
           </a>
         </div>
-    </div>
-    </div>
-
+    {/* </div> */}
+    {/* </div> */}
+</>
   );
 }
 
