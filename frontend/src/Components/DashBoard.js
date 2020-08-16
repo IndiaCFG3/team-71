@@ -54,7 +54,7 @@ const DashBoard = ({user,isAuthenticated}) => {
             <a href="joinus.html" class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">Our Schools</a>
         </div>
         <div>
-            <a href="#" data-menu="menu-share" class="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40">My Associated School</a>
+        <Link to="/my-school" className="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40" >My Associated School</Link>
         </div>
         <div>
             <a href="joinus.html" class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">My Student Teams</a>
@@ -138,7 +138,7 @@ const DashBoard = ({user,isAuthenticated}) => {
     <div data-height="410" class="content-bg round-none bottom-20 dark-mode-tint"></div>
     <div data-height="410" class="content-bg round-none bottom-20 opacity-75 bg-highlight"></div>
 
-    
+
 
 
 
@@ -289,12 +289,12 @@ const DashBoard = ({user,isAuthenticated}) => {
     )
 }
 
-  
+
   const mapStateToProps = (state) => ({
     auth: state.auth,
     isAuthenticated: state.auth.isAuthenticated,
     user: state.auth.user,
 
   });
-  
+
   export default connect(mapStateToProps)(DashBoard);

@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom';
 
 const AssociatedSchool = () => {
   return (
-    <div></div>
+    <div>
+
+       </div>
   );
 }
 
