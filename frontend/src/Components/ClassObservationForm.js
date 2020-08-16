@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-const RegisterSchool = () => {
+const ClassObservationForm = () => {
   return (
     <>
     <div className="page-content">
@@ -11,7 +11,7 @@ const RegisterSchool = () => {
         <div data-height="150" className="page-title-bg opacity-90 bg-highlight"></div>
 
         <div className="page-title-small color-white bottom-30">
-            <h1 onclick="window.location='dashboard.html'"><i className="fa fa-arrow-left back-button"></i>className Observation Form</h1>
+            <h1 onclick="window.location='dashboard.html'"><i className="fa fa-arrow-left back-button"></i>Class Observation Form</h1>
             <a href="#" data-menu="menu-main" className="shadow-huge scale-box bg-fade-gray2-dark" id="UserProfileImage"></a>
         </div>
 
@@ -35,7 +35,16 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
 </div>
 
                                         </td>
@@ -56,7 +65,16 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
 </div>
 
                                         </td>
@@ -77,7 +95,16 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
 </div>
 
                                         </td>
@@ -111,9 +138,17 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
 </div>
-
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
+</div>
                                         </td>
                                         </tr>
                                       </table>
@@ -180,9 +215,17 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
 </div>
-
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
+</div>
                                         </td>
                                         </tr>
                                       </table>
@@ -201,9 +244,17 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
 </div>
-
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
+</div>
                                         </td>
                                         </tr>
                                       </table>
@@ -222,9 +273,17 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
 </div>
-
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
+</div>
                                         </td>
                                         </tr>
                                       </table>
@@ -256,7 +315,16 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
 </div>
 
                                         </td>
@@ -277,12 +345,21 @@ const RegisterSchool = () => {
   <label className="form-check-label" for="inlineRadio2">2</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">3</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+  <label className="form-check-label" for="inlineRadio2">5</label>
 </div>
 
                                         </td>
                                         </tr>
-                                      
+
                                       </table>
                                       </div>
                                     <b>Notes</b>
@@ -309,4 +386,4 @@ const RegisterSchool = () => {
   );
 }
 
-export default RegisterSchool;
+export default ClassObservationForm;

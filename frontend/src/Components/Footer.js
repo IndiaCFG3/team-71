@@ -3,6 +3,38 @@ import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
+    <div>
+    <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached round-large"
+         data-menu-height="340"
+        data-menu-effect="menu-parallax">
+        <div class="boxed-text-huge top-25">
+            <img class="round-medium preload-image center-horizontal" data-src="app/icons/icon-128x128.png" alt="img" width="90" />
+            <h4 class="center-text bolder top-20 bottom-10">Add Patiala.City on your Home Screen</h4>
+            <p>
+                Install Patiala.City on your home screen, and access it just like a regular app. It really is that simple!
+            </p>
+            <a href="#" class="pwa-install button button-xs button-round-medium button-center-large shadow-large bg-highlight bottom-0">Add to Home Screen</a><br/>
+            <a href="#" class="pwa-dismiss close-menu center-text color-gray2-light uppercase ultrabold opacity-60 under-heading font-10">Maybe later</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div id="menu-install-pwa-ios"
+        class="menu menu-box-bottom menu-box-detached round-large"
+         data-menu-height="320"
+        data-menu-effect="menu-parallax">
+        <div class="boxed-text-huge top-25">
+            <img class="round-medium preload-image center-horizontal" data-src="app/icons/icon-128x128.png" alt="img" width="90" />
+            <h4 class="center-text bolder top-20 bottom-10">Add Patiala.City on your Home Screen</h4>
+            <p class="bottom-15">
+                Install Patiala.City on your home screen, and access it just like a regular app.  Open your Safari menu and tap "Add to Home Screen".
+            </p>
+            <div class="clear"></div>
+            <a href="#" class="pwa-dismiss close-menu center-text color-highlight uppercase ultrabold opacity-80 top-25">Maybe later</a>
+            <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
+        </div>
+    </div>
+
     <div id="footer-menu" class="footer-menu-5-icons footer-menu-style-1">
         <a href="trending.html">
             <i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i>
@@ -26,6 +58,7 @@ const Footer = () => {
         </a>
         <div class="clear"></div>
     </div>
+      </div>
     // <div className="font-small pt-4 " style={{backgroundColor:'#040B1C', color:"white",width:'100%'}}>
     //   <div className="text-center pl-5 text-md-left container-fluid">
     //     <div className="row">
