@@ -6,23 +6,22 @@ const StudentSchema = new Schema({
         type : String,
         required : true,
     },
-    
-    roll : {
+    rollno : {
         type : String,
         required : true,
     },
-
     team : {
-        type : Number, 
-        required : true,
+        type : mongoose.Schema.Types.ObjectId, 
+        ref: 'teams',
     },
-
     teacher: {
         type : mongoose.Schema.Types.ObjectId,
         ref:'teachers',
-        
     },
-
+    // unitEvaluation: [{
+    //     type:Schema.Types.ObjectId,
+    //     ref:'unitEvaluationForm'
+    //   }],
     /*
     class : {
         type : Number,
@@ -37,4 +36,4 @@ const StudentSchema = new Schema({
 
 });
 
-module.exports = Student = mongoose.model("Student", StudentSchema)
+module.exports = Student = mongoose.model("students", StudentSchema)
