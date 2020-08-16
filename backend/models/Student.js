@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { truncate } = require('fs');
 const Schema = mongoose.Schema;
 
 const StudentSchema = new Schema({
