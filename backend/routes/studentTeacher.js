@@ -3,18 +3,20 @@ const express = require('express')
 const router = express.Router()
 
 //Import controller
-const StudentController = require('../controllers/students')
+const StudentTeacherController = require('../controllers/studentTeachers')
 
 //Import and require Passport
 const passport = require("passport");
 require("./../middlewares/passport")(passport);
 
 //Create Student route
-router.post('/student', StudentController.createStudent);
+router.post('/studentTeacher', StudentTeacherController.createStudentTeacher);
 
 //Get all schools in database
-router.get('/students', StudentController.getAll);
+router.get('/studentTeachers', StudentTeacherController.getAll);
 
+//Update
+router.get('/updateStudentTeacher', StudentTeacherController.updateStudentTeacher);
 
 
 module.exports = router

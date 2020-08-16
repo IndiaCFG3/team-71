@@ -5,11 +5,11 @@ exports.createStudent = async function(newStudent) {
 
     try{
         const student = Student.create({
-            name: req.body.name,
-            rollno: req.body.rollno,
-            team: req.body.team,
-            teacher : req.body.teacher,
-            classObservation: req.body.classObservation
+            name: newStudent.name,
+            rollno: newStudent.rollno,
+            team: newStudent.team,
+            teacher : newStudent.teacher,
+            classObservation: newStudent.classObservation
         })
         return student;
     }

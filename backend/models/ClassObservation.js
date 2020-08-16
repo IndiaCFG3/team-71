@@ -7,6 +7,10 @@ const ClassObservationFormSchema = new Schema({
         type:Schema.Types.ObjectId,
         ref:'studentTeacher'
     },
+    student: {
+      type:Schema.Types.ObjectId,
+        ref:'students'
+    },
     imageURL: {
       type: String,
       required: false,
