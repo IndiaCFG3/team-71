@@ -51,16 +51,16 @@ const DashBoard = ({user,isAuthenticated}) => {
             {/* <a href="#" data-menu="menu-share" class="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40">Our Associates</a> */}
         </div>
         <div>
-            <a href="joinus.html" class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">Our Schools</a>
+            <Link to="our-schools" className="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">Our Schools</Link>
         </div>
         <div>
         <Link to="/my-school" className="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40" >My Associated School</Link>
         </div>
         <div>
-            <a href="joinus.html" class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">My Student Teams</a>
+            <Link to="/register-team" class="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">My Student Teams</Link>
         </div>
         <div>
-            <a href="#" data-menu="menu-share" class="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40">Student Teachers</a>
+            {/* <a href="#" data-menu="menu-share" class="top-30 button button-m round-small button-full shadow-small bg-highlight bottom-40">Student Teachers</a> */}
         </div>
     </div>
     <br />

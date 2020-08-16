@@ -79,6 +79,8 @@ const NavBar = ({ logout}) => {
     <div>
       <div class="header header-fixed header-logo-app header-auto-show">
       <a href="index.html" class="header-title">Inqui-Lab</a>
+      <span className="float float-right"><Button onClick={logout} color="danger">Logout</Button></span>
+
       <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
       <a href="#" data-toggle-theme class="header-icon header-icon-2"><i class="fas fa-lightbulb"></i></a>
           <a href="#" data-menu="menu-highlights" class="header-icon header-icon-3"><i class="fas fa-brush"></i></a>

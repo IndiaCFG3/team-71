@@ -199,9 +199,7 @@ const UnitEvaluationForm = () => {
                                     </div>
 
             </form>
-            <p className="center-text under-heading opacity-70 font-12 bottom-0"><span className="color-highlight">Connect With Your Community</span></p>
 
-            <p className="footer-copyright bottom-20">Copyright © Patiala.City <span id="copyright-year">2020</span>. All Rights Reserved.</p>
         </div>
         <div className="content right-20 left-20">
           <a className="top-30 button button-m round-small button-full shadow-small button-border color-highlight border-highlight bottom-40">

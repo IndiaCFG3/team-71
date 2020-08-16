@@ -11,7 +11,7 @@ const OurSchools = () => {
   useEffect(()=>{
 
     (async function () {
-      const schools = await api.get('/schools');
+      const schools = await api.get('/school_getall');
       console.log(schools.data)
       setSchools(schools.data);
     })();
@@ -19,9 +19,7 @@ const OurSchools = () => {
   },[])
   return (
     <div>
-<div id="page-preloader">
-      <div className="loader-main"><div className="preload-spinner border-highlight"></div></div>
-    </div>
+
 
 
 <div className="page-content">
