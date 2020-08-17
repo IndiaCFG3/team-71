@@ -1,4 +1,4 @@
-# Team-71: I am a Tea pot,      
+# Team-71: I am a Tea pot
 ## NGO : Inqui-Lab.
 
 <div>
