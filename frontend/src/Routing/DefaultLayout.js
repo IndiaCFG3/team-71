@@ -17,7 +17,7 @@ const DefaultLayout = ({children}) => {
                     {children}
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

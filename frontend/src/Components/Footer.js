@@ -44,7 +44,7 @@ const Footer = () => {
             <i data-feather="globe" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i>
             <span>Other Associates</span>
         </Link>
-        <Link to='/' class="active-nav4">
+        <Link to='/dashboard' class="active-nav4">
             <i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue2-dark" data-feather-bg="blue2-fade-dark"></i>
             <span>Home</span>
         </Link>

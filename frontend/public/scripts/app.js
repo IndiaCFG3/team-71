@@ -28,17 +28,17 @@ function clearLocalStorage() {
 
 function checkForUserAuth(send_WalkThrough, send_Dashboard){
   localStorage.setItem("UserCheck", "PRESET");
-  if (readCookie("PatialaCity_DeviceAuth")!=null) {
-    if (readCookie("PatialaCity_DeviceAuth_Check")!=null) {
+  if (readCookie("inquilab_DeviceAuth")!=null) {
+    if (readCookie("inquilab_DeviceAuth_Check")!=null) {
       var o = new Date;
       var t = o.setTime(o.getTime() + 30 * 60 * 1e3); // 30 min ahead of time
-      if (readCookie("PatialaCity_DeviceAuth_Check")>=t) {
+      if (readCookie("inquilab_DeviceAuth_Check")>=t) {
         // Device Auth is Valid : Go for redirection;
         localStorage.setItem("UserCheck", true);
       }else {
         // Device Auth has expired, re check auth...
         var api_URL = 'https://captain.patiala.city/api/auth.php';
-        var authToken = readCookie("PatialaCity_DeviceAuth");
+        var authToken = readCookie("inquilab_DeviceAuth");
         $.ajax({
             type: 'POST',
             crossDomain: true,
@@ -53,7 +53,7 @@ function checkForUserAuth(send_WalkThrough, send_Dashboard){
                   localStorage.setItem("UserCheck", true);
                   var o2 = new Date;
                   var t2 = o2.setTime(o2.getTime() + 24 * 3 * 60 * 60 * 1e3); // 3 days ahead of time
-                  createCookie("PatialaCity_DeviceAuth_Check", t2, 3);
+                  createCookie("inquilab_DeviceAuth_Check", t2, 3);
                 }else {
                   localStorage.setItem("UserCheck", false);
                 }
@@ -65,8 +65,8 @@ function checkForUserAuth(send_WalkThrough, send_Dashboard){
       // User Device Auth is out of coverage...
       localStorage.setItem("UserCheck", false);
       clearLocalStorage();
-      eraseCookie("PatialaCity_DeviceAuth");
-      eraseCookie("PatialaCity_DeviceAuth_Check");
+      eraseCookie("inquilab_DeviceAuth");
+      eraseCookie("inquilab_DeviceAuth_Check");
     }
   }else {
     localStorage.setItem("UserCheck", false);
@@ -83,8 +83,8 @@ function checkForUserAuth(send_WalkThrough, send_Dashboard){
   }else {
     if (send_WalkThrough) {
       clearLocalStorage();
-      eraseCookie("PatialaCity_DeviceAuth");
-      eraseCookie("PatialaCity_DeviceAuth_Check");
+      eraseCookie("inquilab_DeviceAuth");
+      eraseCookie("inquilab_DeviceAuth_Check");
       window.location='index.html';
     }
   }
@@ -93,7 +93,7 @@ function checkForUserAuth(send_WalkThrough, send_Dashboard){
 //COVID 19
 function getData_Corona() {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -124,8 +124,8 @@ function getData_Corona() {
 //NEWS
 function getData_News(loc) {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   var sendData, news_content="";
   _("Dashboard_News_Slider").innerHTML="We are fetching the latest headlines for you, Please Wait...";
   switch (loc) {
@@ -177,8 +177,8 @@ function getData_News(loc) {
 function getData_News_Pinbord(offset) {
   offset = offset*10; // 10 results
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   var sendData, news_content="";
   $.ajax({
       type: 'POST',
@@ -230,8 +230,8 @@ function getData_News_Pinbord(offset) {
 }
 function getNewsContent(nid) {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -275,8 +275,8 @@ function getNewsContent(nid) {
 //Blogs
 function getData_Blog(loc) {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   var sendData;
   switch (loc) {
     case 'Dashboard':
@@ -313,8 +313,8 @@ function getData_Blog(loc) {
 function getData_Blogs_Pinbord(offset) {
   offset = offset*5; // 5 results
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -338,8 +338,8 @@ function getData_Blogs_Pinbord(offset) {
 }
 function getData_Blog_By_CID(cid) {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -372,8 +372,8 @@ function getData_Blog_By_CID(cid) {
 }
 function getTrendingElements() {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -406,8 +406,8 @@ function getTrendingElements() {
 }
 function getBlogContent(bid) {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  //var api_URL = 'http://localhost/~ck/PatialaCity/PatialaCity_Backend/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  //var api_URL = 'http://localhost/~ck/inquilab/inquilab_Backend/api/Data_APP.php';
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -437,7 +437,7 @@ function getBlogContent(bid) {
 }
 function getData_City() {
   var api_URL = 'https://captain.patiala.city/api/Data_APP.php';
-  var authToken = readCookie("PatialaCity_DeviceAuth");
+  var authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -466,7 +466,7 @@ function updateUserData() {
   fullName = getLocalStorage('UserInputName');
   phonenumber = getLocalStorage('UserInputPhone');
   email = getLocalStorage('UserInputEmail');
-  authToken = readCookie("PatialaCity_DeviceAuth");
+  authToken = readCookie("inquilab_DeviceAuth");
   $.ajax({
       type: 'POST',
       crossDomain: true,
@@ -484,7 +484,7 @@ function updateUserData() {
 // Standing Live on Page ...
 function StandingLive() {
   var api_URL = 'https://captain.patiala.city/api/auth.php';
-  authToken = readCookie("PatialaCity_DeviceAuth");
+  authToken = readCookie("inquilab_DeviceAuth");
   pageName = window.location.href.split('ty/');
   pageName = pageName[1];
   $.ajax({
