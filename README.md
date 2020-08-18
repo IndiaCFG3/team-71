@@ -1,5 +1,16 @@
 # Team-71: I am a Tea pot
 ## NGO : Inqui-Lab.
+<div>
+  <h2>Contributors:</h2>
+  <ul>
+    <li>Rohan Dutt</li>
+    <li>Anuj Raghani</li>
+    <li>Ansh Garg</li>
+    <li>Rohit Sadavarte</li>
+    <li>Prasanna Maram</li>
+    <li>Madhuri Veeramreddy</li>
+  <ul>
+</div>
 
 <div>
   <h3>
